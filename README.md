@@ -16,7 +16,7 @@ $ git clone https://github.com/aki1711/mypkg.git
 $ cd mypkg
 ```
 
-## 実行方法
+## 実行方法(talker,listener)
 * まず、talkerを実行します。
 ```
 $ ros2 run mypkg talker
@@ -42,9 +42,30 @@ listenerの実行結果は以下の通りです。
 [INFO] [1672921299.787459200] [listener]: Listen: 92
 ```
 
+## 実行結果(launch)
+*次のコマンドを実行します。
+```
+$ ros2 launch mypkg talk_listen.launch.py
+```
+実行結果は以下のとおりです。
+```
+[listener-2] [INFO] [1672921671.815461500] [listener]: Listen: 0
+[listener-2] [INFO] [1672921672.291424700] [listener]: Listen: 1
+[listener-2] [INFO] [1672921672.791102600] [listener]: Listen: 2
+[listener-2] [INFO] [1672921673.291155000] [listener]: Listen: 3
+[listener-2] [INFO] [1672921673.790726200] [listener]: Listen: 4
+[listener-2] [INFO] [1672921674.291036900] [listener]: Listen: 5
+[listener-2] [INFO] [1672921674.791428600] [listener]: Listen: 6
+[listener-2] [INFO] [1672921675.290901700] [listener]: Listen: 7
+[listener-2] [INFO] [1672921675.791202000] [listener]: Listen: 8
+[listener-2] [INFO] [1672921676.291066500] [listener]: Listen: 9
+[listener-2] [INFO] [1672921676.790190100] [listener]: Listen: 10
+[listener-2] [INFO] [1672921677.290877000] [listener]: Listen: 11
+[listener-2] [INFO] [1672921677.790889400] [listener]: Listen: 12
+```
 ## 動作環境
 * Ubuntu 20.04.5 LTS
-* ros2
+* ROS2
 
 ## ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます.
