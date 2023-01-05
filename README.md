@@ -47,7 +47,8 @@ $ ros2 run mypkg listener
 
 ## 実行方法(launch)
 launchファイルを使用することで、`talker`,`listener`2つのノードを一度に立ち上げることができます。
-*次のコマンドを実行します。
+
+* 次のコマンドを実行します。
 ```
 $ ros2 launch mypkg talk_listen.launch.py
 ```
