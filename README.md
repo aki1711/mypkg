@@ -8,8 +8,7 @@
 ## talker,listener
 `talker`でパブリッシュし、`listener`でサブスクライブします。
 
-`talker`:数字をカウントし、countupというトピックを通じてメッセージを送
-信します。
+`talker`:数字をカウントし、countupというトピックを通じてメッセージを送信します。
 
 `listener`:countupからメッセージを受信し、表示します。
 
