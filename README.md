@@ -17,6 +17,8 @@ $ cd mypkg
 ```
 
 ## 実行方法(talker,listener)
+talker:数字をカウントし、countupというトピックを通じてメッセージを送信します。
+listener:countupからメッセージを受信し、表示します。
 * まず、talkerを実行します。
 ```
 $ ros2 run mypkg talker
@@ -42,7 +44,8 @@ listenerの実行結果は以下の通りです。
 [INFO] [1672921299.787459200] [listener]: Listen: 92
 ```
 
-## 実行結果(launch)
+## 実行方法(launch)
+launchファイルを使用することで、talker,listener2つのノードを一度に立ち上げることができます。
 *次のコマンドを実行します。
 ```
 $ ros2 launch mypkg talk_listen.launch.py
