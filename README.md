@@ -18,6 +18,7 @@ $ cd mypkg
 
 ## 実行方法(talker,listener)
 talker:数字をカウントし、countupというトピックを通じてメッセージを送信します。
+
 listener:countupからメッセージを受信し、表示します。
 * まず、talkerを実行します。
 ```
