@@ -5,21 +5,16 @@
 このリポジトリはロボットシステム学の講義で使用したROS2のパッケージです。
 `talker`と`listener`の2つのノード、`talk_listen.launch.py`というlaunchファイルが使用できます。
 
-## インストール
-* 以下のコマンドを実行して、リポジトリをクローンします。
-```
-$ git clone https://github.com/aki1711/mypkg.git
-```
+## talker,listener
+`talker`でパブリッシュし、`listener`でサブスクライブします。
 
-* そのあと、クローンしたリポジトリに移動します。
-```
-$ cd mypkg
-```
-
-## 実行方法(talker,listener)
-`talker`:数字をカウントし、countupというトピックを通じてメッセージを送信します。
+`talker`:数字をカウントし、countupというトピックを通じてメッセージを送
+信します。
 
 `listener`:countupからメッセージを受信し、表示します。
+
+## 実行方法
+
 * まず、`talker`を実行します。
 ```
 $ ros2 run mypkg talker
@@ -45,8 +40,10 @@ $ ros2 run mypkg listener
 [INFO] [1672921299.787459200] [listener]: Listen: 92
 ```
 
-## 実行方法(launch)
+## launchファイル
 launchファイルを使用することで、`talker`,`listener`2つのノードを一度に立ち上げることができます。
+
+## 実行方法
 
 * 次のコマンドを実行します。
 ```
